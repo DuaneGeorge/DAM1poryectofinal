@@ -75,11 +75,13 @@ public class MainActivity extends AppCompatActivity {
                 User objUsuario = lstUsuarios.get(id);
                 String salida = "Información de Mensaje \n\n";
 
-                salida += "posId : " + objUsuario.getPostId() +"\n";
-                salida += "id : " + objUsuario.getId() +"\n";
-                salida += "name : " + objUsuario.getName() +"\n";
-                salida += "email : " + objUsuario.getEmail() +"\n";
-                salida += "body : " + objUsuario.getBody() +"\n";
+                salida += "idCliente : " + objUsuario.getIdCliente() +"\n";
+                salida += "nombre : " + objUsuario.getNombres() +"\n";
+                salida += "apellidos : " + objUsuario.getApellidos() +"\n";
+                salida += "dni : " + objUsuario.getDni() +"\n";
+                salida += "direccion : " + objUsuario.getDireccion() +"\n";
+                salida += "correo : " + objUsuario.getCorreo() +"\n";
+
                 txtInfo.setText(salida);
 
             }
@@ -96,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                     mensajeToast("Acceso exitoso al servicio REST");
                     lstUsuarios = response.body();
                     for (User user:lstUsuarios){
-                    usuarios.add(user.getName());////////////////
+                    usuarios.add(user.getNombres());////////////////
                     }
                     adapter.notifyDataSetChanged();
 

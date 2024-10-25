@@ -1,50 +1,60 @@
 package com.example.aplicationt2.entity;
 
 public class User {
-    private int postId;
-    private int id;
-    private String name;
-    private String email;
-    private String body;
+    private int idCliente;
+    private String nombres;
+    private String apellidos;
+    private int dni;
+    private String direccion;
+    private String correo;
 
-    public int getPostId() {
-        return postId;
+
+    public int getIdCliente() {
+        return idCliente;
     }
 
-    public void setPostId(int postId) {
-        this.postId = postId;
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
     }
 
-    public int getId() {
-        return id;
+    public String getNombres() {
+        return nombres;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
     }
 
-    public String getName() {
-        return name;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
-    public String getEmail() {
-        return email;
+    public int getDni() {
+        return dni;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDni(int dni) {
+        this.dni = dni;
     }
 
-    public String getBody() {
-        return body;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setBody(String body) {
-        this.body = body;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 }
 
